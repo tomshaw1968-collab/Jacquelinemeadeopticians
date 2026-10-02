@@ -255,6 +255,7 @@ header.site nav .sub a:hover{color:var(--gold)}
 .prose strong{color:var(--ink);font-weight:500}
 .block.dark .prose p,.block.dark .prose li{color:#b7ae9f}
 .block.dark .prose strong{color:#f4efe6}
+.block.dark .link{color:#f4efe6}.block.dark .link:hover{color:var(--gold-soft)}
 .prose h3{font-size:1.7rem;margin:34px 0 12px}
 .prose h3:first-child{margin-top:0}
 .prose ul{list-style:none;padding:0;margin:0 0 1.2em}
