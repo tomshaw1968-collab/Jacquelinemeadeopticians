@@ -421,6 +421,7 @@ header.site nav .sub a:hover{color:var(--gold)}
 .lens-card{background:#fff;border:1px solid var(--line);padding:30px 30px 32px;display:flex;flex-direction:column}
 .lens-card h3{font-size:1.75rem;margin:12px 0 10px}
 .lens-card p{color:var(--muted);font-size:.96rem;margin:0}
+.block.dark .lens-card{background:var(--ink-2);border-color:#3a352b}.block.dark .lens-card p{color:#b7ae9f}
 @media (max-width:1000px){.lens-grid{grid-template-columns:1fr 1fr}}
 @media (max-width:640px){.lens-grid{grid-template-columns:1fr}}
 
