@@ -52,11 +52,30 @@ window.JM_TEAM={"jacqueline meade": {"name": "Jacqueline Meade", "first": "Jacqu
     }
   }
 
+  // Highlight the Enhanced Sight Test on the appointment-type step
+  function recommend(root) {
+    var types = root.querySelectorAll('.xeyexApptType:not([data-jm-rec])');
+    for (var i = 0; i < types.length; i++) {
+      var t = types[i]; t.setAttribute('data-jm-rec', '');
+      var btn = t.querySelector('button');
+      if (!btn || !/enhanced/i.test(btn.textContent || '')) continue;
+      t.classList.add('jm-rec');
+      t.insertBefore(el('span', 'jm-rec-badge', 'Recommended by Jacqueline'), t.firstChild);
+      var ul = el('ul', 'jm-rec-list');
+      ['Everything in the NHS eye examination', 'optomap\u00ae image of around 82% of your retina', '3D OCT scan beneath the surface of the eye', 'See your own images on screen', 'A record to compare at every future visit']
+        .forEach(function (x) { ul.appendChild(el('li', null, x)); });
+      t.appendChild(ul);
+      var more = el('p', 'jm-rec-more', '\u00a335 for adults, in addition to your free NHS examination. ');
+      var a = el('a', null, 'Why it matters'); a.href = '#why-enhanced'; more.appendChild(a);
+      t.appendChild(more);
+    }
+  }
+
   function start() {
     var w = document.getElementById('xf022e232b663451');
     if (!w) return;
-    decorate(w);
-    new MutationObserver(function () { decorate(w); }).observe(w, { childList: true, subtree: true });
+    decorate(w); recommend(w);
+    new MutationObserver(function () { decorate(w); recommend(w); }).observe(w, { childList: true, subtree: true });
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start); else start();
 })();

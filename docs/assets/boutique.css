@@ -492,3 +492,34 @@ dialog.jm-bio::backdrop{background:rgba(23,21,15,.62)}
 .founder .award b{color:#f4efe6}
 .founder .award small{color:#b7ae9f}
 @media (max-width:860px){.founder{grid-template-columns:1fr}.founder-photo{position:static}}
+/* Booking: Enhanced Sight Test */
+.enh-strip{display:flex;gap:12px;align-items:flex-start;margin:0 0 24px;padding:14px 18px;background:var(--ivory);border-left:3px solid var(--gold);color:var(--text);font-size:.92rem;line-height:1.5;text-decoration:none}
+.enh-strip:hover u{color:var(--gold)}
+.enh-star{color:var(--gold);font-size:1rem;line-height:1.4}
+.enh{background:var(--ink);color:#d9d1c3;padding:clamp(26px,4vw,40px);margin:0 0 34px;scroll-margin-top:110px}
+.enh .label{color:var(--gold-soft)}
+.enh h3{color:#f4efe6;font-size:clamp(1.7rem,3vw,2.1rem);line-height:1.1;margin:12px 0 16px}
+.enh h3 em{color:var(--gold-soft)}
+.enh h4{color:#f4efe6;font-family:var(--sans);font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;font-weight:400;margin:24px 0 10px}
+.enh p{color:#b7ae9f;margin:0 0 16px}
+.enh-list{list-style:none;padding:0;margin:20px 0;display:grid;gap:16px}
+.enh-list li{padding-left:30px;position:relative}
+.enh-list li::before{content:"\2713";position:absolute;left:0;top:0;color:var(--gold-soft);font-size:1.05rem}
+.enh-list b{display:block;color:#f4efe6;font-weight:500;margin-bottom:3px}
+.enh-list span{color:#b7ae9f;font-size:.95rem}
+.enh-ease{border-top:1px solid rgba(244,239,230,.16);border-bottom:1px solid rgba(244,239,230,.16);padding:14px 0;font-size:.92rem}
+.enh-who{list-style:none;padding:0;margin:0 0 20px;display:flex;flex-wrap:wrap;gap:8px}
+.enh-who li{font-size:.82rem;padding:6px 12px;border:1px solid rgba(244,239,230,.22);border-radius:999px;color:#d9d1c3}
+.enh-price{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin:6px 0 10px}
+.enh-price .price-tag{margin:0;color:var(--gold-soft)}
+.enh-price span:last-child{color:#b7ae9f;font-size:.9rem}
+.enh-how{font-size:.92rem}
+.enh-how b,.enh-how em{color:#f4efe6}
+.enh .link{color:#f4efe6}
+/* Booking widget: highlight Enhanced Sight Test */
+.xeyexApptType.jm-rec{position:relative;border:1px solid var(--gold);background:var(--ivory);padding:34px 18px 16px;margin:6px 0 18px}
+.jm-rec-badge{position:absolute;top:-1px;left:-1px;background:var(--gold);color:#fff;font:400 .66rem/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;padding:7px 12px}
+.jm-rec-list{list-style:none;padding:0;margin:10px 0 8px;display:grid;gap:5px;font-size:.88rem;color:var(--text)}
+.jm-rec-list li::before{content:"\2713  ";color:var(--gold);white-space:pre}
+.jm-rec-more{font-size:.85rem;color:var(--muted);margin:6px 0 0}
+.jm-rec-more a{color:var(--ink)}
