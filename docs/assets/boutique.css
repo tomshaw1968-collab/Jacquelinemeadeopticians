@@ -458,3 +458,19 @@ header.site nav .sub a:hover{color:var(--gold)}
 .member-tags{list-style:none;padding:0;margin:6px 0 0;display:flex;flex-wrap:wrap;gap:8px}
 .member-tags li{font-size:.8rem;padding:6px 12px;border:1px solid var(--line);border-radius:999px;color:var(--muted)}
 @media (max-width:720px){.member{grid-template-columns:1fr}.member-photo{max-width:320px}}
+/* Booking widget: Meet the optometrist */
+.xeyexHeaderPerson{display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px}
+.jm-bio-btn{display:inline-flex;align-items:center;gap:8px;padding:3px 14px 3px 3px;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--ink);font:400 .7rem/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;cursor:pointer;transition:border-color .2s,color .2s}
+.jm-bio-btn:hover,.jm-bio-btn:focus-visible{border-color:var(--gold);color:var(--gold)}
+.jm-bio-btn img{width:26px;height:26px;border-radius:50%;object-fit:cover;object-position:50% 25%}
+dialog.jm-bio{border:0;padding:0;width:min(720px,calc(100% - 32px));max-height:calc(100% - 32px);background:var(--ivory);color:var(--text);box-shadow:0 30px 80px rgba(23,21,15,.35)}
+dialog.jm-bio::backdrop{background:rgba(23,21,15,.62)}
+.jm-bio-inner{display:grid;grid-template-columns:220px minmax(0,1fr)}
+.jm-bio-photo{width:100%;height:100%;min-height:275px;object-fit:cover;object-position:50% 25%;display:block}
+.jm-bio-body{padding:30px 30px 28px}
+.jm-bio-body h3{font-size:1.9rem;margin:8px 0 14px;line-height:1.1}
+.jm-bio-body h3 small{display:block;font-family:var(--sans);font-size:.75rem;letter-spacing:.14em;color:var(--muted);margin-top:6px;font-weight:400}
+.jm-bio-body p{margin:0 0 12px;font-size:.95rem}
+.jm-bio-actions{display:flex;flex-wrap:wrap;align-items:center;gap:14px 24px;margin-top:18px}
+.jm-bio-close{position:absolute;top:10px;right:10px;width:40px;height:40px;border-radius:50%;background:rgba(247,243,237,.92);border:0;font-size:1.6rem;line-height:1;color:var(--ink);cursor:pointer;display:grid;place-items:center;z-index:1}
+@media (max-width:600px){.jm-bio-inner{grid-template-columns:1fr}.jm-bio-photo{height:260px;min-height:0}.jm-bio-body{padding:22px 20px 24px}}
