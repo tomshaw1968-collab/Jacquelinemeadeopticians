@@ -67,7 +67,7 @@
   });
   // Hero slideshow: slow cross-fade between images
   var hs = [].slice.call(document.querySelectorAll('.hero-slides .hs'));
-  if (hs.length > 1 && !(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches)) {
+  if (hs.length > 1 && !document.querySelector('canvas.cbc') && !(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches)) {
     var h = 0;
     setInterval(function () {
       if (document.hidden) return;
