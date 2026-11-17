@@ -27,19 +27,22 @@
   <a href="./">Home</a><a href="./eyewear/">Eyewear</a><div class="sub-links"><a href="./eyewear/frames/">Frames</a><a href="./eyewear/sunglasses/">Sunglasses</a><a href="./eyewear/lenses/">Lenses</a><a href="./eyewear/lenses/varifocal/">Varifocals</a><a href="./eyewear/styling/">Personal styling</a><a href="./eyecare/children/">Children's eyewear</a></div><a href="./eyecare/">Eyecare</a><div class="sub-links"><a href="./eyecare/eye-examinations/">Eye examinations</a><a href="./eyecare/technology/">Our technology</a><a href="./eyecare/children/">Children's eyecare</a><a href="./eyecare/emergencies/">Emergency eyecare</a><a href="./eyecare/contact-lenses/">Contact lenses</a><a href="./eyecare/glaucoma/">Glaucoma</a><a href="./eyecare/dry-eye/">Dry eye care</a><a href="./eyecare/home-visits/">Home visits</a></div>
   <a href="./about/">About us</a><a href="./contact/">Visit us</a><a href="./book-appointment/">Book an appointment</a><a class="small" href="tel:+441236449955">01236 449955</a></div>
 <main id="main">
-<section class="hero">
-  <div class="hero-slides" aria-hidden="false">
-    <img class="hs on" src="./images/shop-interior.jpg" alt="Inside Jacqueline Meade Opticians – pendant lights, a reclaimed oak table and fresh flowers" fetchpriority="high">
-    <img class="hs" src="./images/hero-a-jungle.jpg" alt="Colourful Cocoa Mint sunglasses against tropical parrot wallpaper" style="object-position:50% 30%" decoding="async">
-    <img class="hs" src="./images/hero-b-lounge.jpg" alt="The sunglasses lounge with a glowing feather lamp and gilded mirror" decoding="async">
-    <img class="hs" src="./images/hero-c-noir.jpg" alt="The boutique in gold and ink tones, with a portrait in mirrored sunglasses" style="object-position:60% 40%" decoding="async">
-    <img class="hs" src="./images/hero-d-verdant.jpg" alt="Sunglasses displayed among trailing plants on a sage-green wall" decoding="async">
+<script>if(!(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches))document.documentElement.classList.add('cbc-js')</script>
+<section class="hero cbc-hero">
+  <div class="hero-slides">
+    <img class="hs on" src="./images/hero-a-jungle.jpg" data-pos="50 30" alt="Colourful Cocoa Mint sunglasses against tropical parrot wallpaper" style="object-position:50% 30%" fetchpriority="high">
+    <img class="hs" src="./images/hero-b-lounge.jpg" data-pos="50 50" alt="The sunglasses lounge with a glowing feather lamp and gilded mirror" decoding="async">
+    <img class="hs" src="./images/shop-interior.jpg" data-pos="50 50" alt="Inside Jacqueline Meade Opticians – pendant lights, a reclaimed oak table and fresh flowers" decoding="async">
+    <img class="hs" src="./images/hero-d-verdant.jpg" data-pos="50 50" alt="Sunglasses displayed among trailing plants on a sage-green wall" decoding="async">
+    <canvas class="cbc" aria-hidden="true"></canvas>
   </div>
+  <div class="cbc-names" aria-hidden="true"></div>
   <div class="wrap">
-    <div><div class="label">Est. 1991 &nbsp;·&nbsp; Bank Street, Coatbridge</div><h1>Exquisite eyewear.<br><em>Exceptional</em> eyecare.</h1></div>
-    <div class="side"><p>An independent opticians where every frame is chosen by hand, and every examination is given the time it deserves.</p>
-      <div class="actions" style="margin-top:26px"><a class="btn solid" href="./book-appointment/">Book an appointment</a><a class="link" href="./eyewear/frames/">The collection</a></div></div>
+    <div><div class="label">Frames arranged by colour, not by brand</div><h1 class="cbc-h">Better looking in <span class="rainbow">colour</span>.</h1></div>
+    <div class="side"><p>Our ladies' frames are arranged by colour, so you find the shades that suit you first, then the frame you love.</p>
+      <div class="actions" style="margin-top:26px"><a class="btn solid" href="./eyewear/frames/">Find your colours</a><a class="link" href="./book-appointment/">Book an appointment</a></div></div>
   </div>
+  <script src="./assets/colour-hero.js" defer></script>
 </section>
 <section class="statement"><div class="wrap">
   <span class="label rv">Since 1991</span>
